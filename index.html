@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>간단한 HTML 예시</title>
+  <meta charset="UTF-8" />
+  <title>배포 완료</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f7fa;
+      text-align: center;
+      padding: 100px;
+    }
+    .container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+    h1 {
+      color: #28a745;
+      font-size: 32px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    a.button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>환영합니다!</h1>
-    </header>
-    <main>
-        <p>이 페이지는 간단한 HTML 예시입니다.</p>
-        <ul>
-            <li>HTML 기본 구조</li>
-            <li>메타 태그</li>
-            <li>타이틀</li>
-        </ul>
-    </main>
-    <footer>
-        <p>© 2025 예시 사이트</p>
-    </footer>
+  <div class="container">
+    <h1>🎉 배포가 완료되었습니다!</h1>
+    <p>이제 인프라가 성공적으로 구축되었습니다.</p>
+    <a href="/sshkey/example.pem" download class="button">🔑 SSH 키 다운로드</a>
+    <br />
+    <a href="/dashboard.html" class="button" style="background-color:#28a745;margin-top:15px;">📊 대시보드로 이동</a>
+  </div>
+
+  <script>
+    // 자동 리디렉션: 10초 후 대시보드로 이동
+    setTimeout(() => {
+      window.location.href = "/dashboard.html";
+    }, 10000);
+  </script>
 </body>
 </html>
